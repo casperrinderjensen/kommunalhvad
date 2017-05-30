@@ -1,0 +1,2245 @@
+/* Scss Document */
+/* base-styles */
+
+// Variabler
+$brand-color: #FF4A4D;
+$secondary-color: #3c3c3c;
+$dark-grey: #2f2f2f;
+$black-text-color: black;
+$white-text-color: white;
+$background-color: #FCFCFC;
+
+
+
+
+
+
+
+/* generelle styles */
+
+body {
+  font-family: 'Nunito Sans', futura, helvetica, arial, sans-serif;
+  font-weight: 300; 
+	background: $background-color;
+}
+h1 {
+	font-size: 3.5em;
+	font-weight: 200;
+}
+h2 {
+	font-size: 2em;
+	font-weight: 200;
+}
+
+.topnav {
+	z-index: 999;
+	top: 0;
+	position: fixed;
+	height: 50px;
+	background: $secondary-color;
+	opacity: 0.93;
+	max-width: 1940px;
+	margin: 0 auto;
+}
+.logo img {
+	width: 210px;
+	padding-left: 20px;
+	padding-top: 8px;
+}
+.logo-mobile {
+	display: none;
+}
+.nav-desktop {
+ 	height: 50px; 
+}
+.nav-desktop ul {
+    display: inline-flex; 
+}
+.nav-desktop li {
+    list-style: none;
+    padding-right: 0px;
+    padding-left: 0px;
+	margin-left: 60px;
+}
+.nav-desktop a {
+    text-decoration: none;
+    color: $white-text-color;
+	  font-size: 1.1em;
+}
+.nav-desktop a:hover {
+	color: $brand-color;
+	transition: 0.4s;
+}
+.nav-desktop li .selected {
+    color: $white-text-color;
+	border-bottom: 1px solid $brand-color;
+}
+.nav-desktop li .selected:hover {
+	color: $brand-color;
+	transition: 0.4s;
+}
+.nav-desktop {
+	padding-top: 15px;
+}
+.nav-mobile {
+	display: none;
+}
+.mobile {
+		display: none;
+}
+.countdown {
+	padding-left: 7px;
+      text-align: left;
+      font-size: 17px;
+      font-family: 'Nunito Sans', futura, helvetica, arial, sans-serif;
+      word-spacing: 3px;
+	color: $white-text-color;
+	height: 50px;
+	padding-top: 10px;
+}
+#countdown {
+	color: $white-text-color;
+}
+.countdown p {
+	text-align: left;
+	font-size: 1em;
+}
+.countdown h2 {
+	font-size: 0.885em;
+	text-align: left;
+	padding-left: 1px;
+}
+
+.video {
+	margin-top: 0px;
+	
+}
+
+/* index.html */
+.box1 {
+  height: 600px;
+	color: $black-text-color;
+	background: $brand-color;
+	margin-top: 50px;
+	padding-top: 30px;
+	margin-bottom: 0px;
+}
+.box1 h1, h2 {
+	text-align: center;
+}
+.box1 h1 {
+	font-size: 2em;
+}
+.box1 p {
+	font-size: 1.5em;
+	font-weight: 200;
+	text-align: left;
+}
+
+.box2 {
+	height: 800px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background: $secondary-color;
+	color: $white-text-color;
+}
+.box2 h1 {
+	font-size: 2em;
+	text-align: center;
+	padding-top: 40px;
+	font-weight: 300;
+}
+.box2 h2 {
+	text-align: center;
+	padding-top: 20px;
+}
+.box2 h3 {
+	font-weight: 200;
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 20px;
+}
+.box2 p {
+	font-size: 1em;
+	margin-top: 20px;
+	margin-left: 74px;
+	margin-right: 66px;
+	line-height: 1.3;
+	font-weight: 200;
+}
+.box2 li {
+	font-size: 1em;
+	margin-top: 20px;
+	margin-left: 130px;
+	margin-right: 60px;
+	line-height: 0.8;
+	font-weight: 200;
+}
+.box2 hr {
+	margin-top: 50px;
+	color: red;
+}
+.countdown2 {
+	padding-bottom: 40px;
+}
+.countdown2 h4 {
+	font-size: 2.2em;
+	font-weight: 200;
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 40px;
+	color: $white-text-color;
+}
+
+
+/* --- STEMMEGUIDE.HTML --- */
+.box1-din-kommune {
+	height: 655px;
+	text-align: center;
+}
+.box1-din-kommune h2 {
+	margin-top: 65px;
+	margin-bottom: 10px;
+	font-weight: 200;
+	
+}
+.kommune-kategori {
+	color: $black-text-color;
+	font-size: 1.3em;
+	padding-right: 15px;
+	padding-left: 15px;
+	transition: 0.2s;
+}
+.kommune-kategori:hover {
+	color: $brand-color;
+}
+
+/* --- DANMARK KORT --- */
+/* BILLEDETS STORRELSE */
+.map_image {
+	margin-top: 100px;
+	max-width: 500px;
+	margin-left: 34%;
+}
+.map_image svg {
+width : 105%;
+}
+
+.map_image-din-kommune {
+	margin-top: 50px;
+	max-width: 500px;
+	margin-left: 34%;
+}
+.map_image-din-kommune svg {
+width : 100%;
+height : 350px;
+}
+
+/* STYLE GRUPPERNES UDSEENDE HERUNDER */
+/* HOVER PA GRUPPERNE HERUNDER */
+.map_image g:hover {
+	-webkit-fill: $secondary-color;
+	-moz-fill: $secondary-color;
+	-o-fill: $secondary-color;
+	fill: $secondary-color; /* Farve nar man hover */
+	-webkit-stroke: $secondary-color;
+	-moz-stroke: $secondary-color;
+	-o-stroke: $secondary-color;
+	stroke: $secondary-color; /* Farve pa streger nar man hover */
+	-webkit-transition: fill 0.3s;
+	-moz-transition: fill 0.3s;
+	-o-transition: fill 0.3s;
+	transition: fill 0.3s;
+}
+.map_image .fyn-selected {
+	-webkit-fill: $secondary-color;
+	-moz-fill: $secondary-color;
+	-o-fill: $secondary-color;
+	fill: $secondary-color; /* Farve nar man hover */
+	-webkit-stroke: $secondary-color;
+	-moz-stroke: $secondary-color;
+	-o-stroke: $secondary-color;
+	stroke: $secondary-color; /* Farve pa streger nar man hover */
+}
+.map_image .sjaelland-selected {
+	-webkit-fill: $secondary-color;
+	-moz-fill: $secondary-color;
+	-o-fill: $secondary-color;
+	fill: $secondary-color; /* Farve nar man hover */
+	-webkit-stroke: $secondary-color;
+	-moz-stroke: $secondary-color;
+	-o-stroke: $secondary-color;
+	stroke: $secondary-color; /* Farve pa streger nar man hover */
+}
+.map_image .jylland-selected {
+	-webkit-fill: $secondary-color;
+	-moz-fill: $secondary-color;
+	-o-fill: $secondary-color;
+	fill: $secondary-color; /* Farve nar man hover */
+	-webkit-stroke: $secondary-color;
+	-moz-stroke: $secondary-color;
+	-o-stroke: $secondary-color;
+	stroke: $secondary-color; /* Farve pa streger nar man hover */
+}
+.map_image g {
+	-webkit-fill: $background-color;
+	-moz-fill: $background-color;
+	-o-fill: $background-color;
+	fill: $background-color; /* Grundfarve til grupper */
+	-webkit-stroke: $secondary-color;
+	-moz-stroke: $secondary-color;
+	-o-stroke: $secondary-color;
+	stroke: $secondary-color; /* Farve til gruppernes streger */
+	-webkit-transition: fill 0.3s;
+	-moz-transition: fill 0.3s;
+	-o-transition: fill 0.3s;
+	transition: fill 0.3s;  
+}
+
+/* --- JYLLAND.HTML --- */
+.box1-jylland {
+	background: $background-color;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.box2-jylland {
+	text-align: left;
+	height: 800px;
+	background: $brand-color;
+	margin-bottom: 0px;
+}
+.box2-jylland h1 {
+	text-align: center;
+	color: $white-text-color;
+	padding-top: 60px;
+	margin-left: 0%;
+	margin-bottom: 10px;
+}
+.box2-jylland h2 {
+	text-align: left;
+	color: $white-text-color;
+	font-weight: 400;
+	line-height: 1.4;
+	margin-left: 40%;
+}
+.box2-jylland h3 {
+	color: $white-text-color;
+	font-size: 1.5em;
+	font-weight: 200;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.box2-jylland p {
+	color: $white-text-color;
+	line-height: 1.6;
+	transition: 0.2s;
+	margin-left: 40%;
+}
+.box2-jylland p:hover {
+	color: $black-text-color;
+}
+/* --- FYN.HTML --- */
+.box1-fyn {
+	background: $background-color;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.box2-fyn {
+	text-align: left;
+	height: 605px;
+	background: $brand-color;
+	margin-bottom: 0px;
+}
+.box2-fyn h1 {
+	text-align: center;
+	color: $white-text-color;
+	padding-top: 60px;
+	margin-left: 0%;
+	margin-bottom: 10px;
+}
+.box2-fyn h2 {
+	text-align: left;
+	color: $white-text-color;
+	font-weight: 400;
+	line-height: 1.4;
+	margin-left: 40%;
+}
+.box2-fyn h3 {
+	color: $white-text-color;
+	font-size: 1.5em;
+	font-weight: 200;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.box2-fyn p {
+	color: $white-text-color;
+	line-height: 1.6;
+	transition: 0.2s;
+	margin-left: 40%;
+}
+.box2-fyn p:hover {
+	color: $black-text-color;
+}
+/* --- SJAELLAND.HTML --- */
+.box1-sjaelland {
+	background: $background-color;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.box2-sjaelland {
+	text-align: left;
+	height: auto;
+	background: $brand-color;
+	margin-bottom: 0px;
+}
+.box2-sjaelland h1 {
+	text-align: center;
+	color: $white-text-color;
+	padding-top: 60px;
+	margin-left: 0%;
+	margin-bottom: 10px;
+}
+.box2-sjaelland h2 {
+	text-align: left;
+	color: $white-text-color;
+	font-weight: 400;
+	line-height: 1.4;
+	margin-left: 40%;
+}
+.box2-sjaelland h3 {
+	color: $white-text-color;
+	font-size: 1.5em;
+	font-weight: 200;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.box2-sjaelland p {
+	color: $white-text-color;
+	line-height: 1.6;
+	transition: 0.2s;
+	margin-left: 40%;
+}
+.box2-sjaelland p:hover {
+	color: $black-text-color;
+}
+
+/* --- tilbage knap --- */
+.tilbage-box {
+	text-align: left;
+}
+.tilbage {
+	width: 80px;
+	margin-top: 130px;
+	margin-left: 5%;
+	transition: 0.2s;
+}
+.tilbage:hover {
+	transform: scale(1.1);
+}
+
+/* --- aarhus + odense + kobenhavn.HTML --- */
+.box1-aarhus, .box1-odense, .box1-kobenhavn {
+	margin-top: -50px;
+	height: 420px;
+	text-align: center;
+}
+.box1-aarhus h1, .box1-odense h1, .box1-kobenhavn h1 {
+	margin-top: -50px;
+	margin-bottom: 20px;
+}
+.odense, .kobenhavn {
+	width: 200px;
+}
+.aarhus {
+	width: 140px;
+}
+.aarhus-skyline-box {
+	text-align: center;
+}
+.aarhus-skyline {
+	margin-bottom: -5px;
+	width: 30%;
+	opacity: 1;
+}
+.odense-skyline-box {
+	text-align: center;
+}
+.odense-skyline {
+	margin-bottom: -5px;
+	width: 30%;
+	opacity: 1;
+}
+.kobenhavn-skyline-box {
+	text-align: center;
+}
+.kobenhavn-skyline {
+	margin-bottom: -5px;
+	width: 40%;
+	opacity: 1;
+}
+
+.box2-aarhus, .box2-odense, .box2-kobenhavn {
+	height: auto;
+	padding-bottom: 60px;
+	text-align: center;
+	background: $brand-color;
+}
+.box2-aarhus img, .box2-odense img, .box2-kobenhavn img {
+	width: 250px;
+	border-radius: 200px;
+	margin-top: 50px;
+	transition: 0.2s;
+}
+.box2-aarhus h2, .box2-odense h2, .box2-kobenhavn h2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: $white-text-color;
+}
+.box2-aarhus h4, .box2-odense h4, .box2-kobenhavn h4 {
+	margin-top: 5px;
+	color: $white-text-color;
+	font-size: 1.2em;
+}
+.box2-aarhus h5, .box2-odense h5, .box2-kobenhavn h5 {
+	margin-top: 5px;
+	color: $white-text-color;
+	font-size: 1.1em;
+	font-weight: 200;
+	margin-bottom: 5px;
+}
+.box2-aarhus h6, .box2-odense h6, .box2-kobenhavn h6 {
+	margin-top: 5px;
+	color: $white-text-color;
+	font-size: 1.2em;
+	font-weight: 200;
+	margin-bottom: 5px;
+}
+.box2-aarhus p, .box2-odense p, .box2-kobenhavn p {
+	line-height: 1.2;
+	color: $white-text-color;
+	text-align: left;
+	width: 300px;
+	margin-left: 20%;
+	margin-bottom: 5px;
+}
+.box2-aarhus li, .box2-odense li, .box2-kobenhavn li {
+	line-height: 1.2;
+	color: $white-text-color;
+	text-align: left;
+	width: 330px;
+	margin-left: 20%;
+	margin-bottom: 10px;
+	font-weight: 300;
+}
+
+/* --- Kandidat video player - Inspiration: https://codepen.io/anon/pen/jmpqXb --- */
+.video-link {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.player {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,1);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,.65) 0%, rgba(0,0,0,1) 100%);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,.65) 0%, rgba(0,0,0,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,.65) 0%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(center, ellipse cover, rgba(0,0,0,.65) 0%,rgba(0,0,0,1) 100%);
+
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+.player__video {
+    position: relative;
+    top: 50%;
+    left: 50%; 
+    width: auto;
+    max-width: 75%;
+    box-shadow: 0 0 50px rgba(0,0,0,.95);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.js--show-video { opacity: 1; }
+
+.video-filler {
+    display: block;
+    width: 100%;
+}
+.video-close {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: -55px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 0 50% 50% 0;
+    cursor: pointer;
+    font-size: 40px;
+    color: $brand-color;
+    background-color: $secondary-color;
+    box-shadow: 0 0 20px rgba(0,0,0,.75);
+}
+.video-iframe {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 10px solid $secondary-color;
+	border-radius: 5px;
+}
+
+/* --- Kandidat play knap - Inspiration: https://www.w3schools.com/howto/howto_css_image_overlay.asp --- */
+.play-button-container {
+    position: relative;
+    width: 100%;
+}
+
+.play-button-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.play-button-middle {
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -mz-transform: translate(-50%, -50%);
+}
+.play-button-container:hover .play-button-image {
+  opacity: 0.2;
+}
+.play-button-container:hover .play-button-middle {
+  opacity: 1;
+	top: 50%;
+	left: 50%;
+	font-size: 2em;
+}
+.play-button-text {
+  color: $white-text-color;
+  font-size: 3em;
+  padding: 16px 32px;
+	opacity: 0.8;
+}
+
+/* --- filtrering - inspiration: https://www.w3schools.com/howto/howto_js_countdown.asp --- */
+.filter-buttons {
+    font-family: 'nunito sans', helvetica, arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    padding: .5rem 1rem;
+    margin: 0.5rem;
+    height: auto;
+    border: 1px solid $white-text-color;
+	border-radius: 30px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    color: $white-text-color;
+    background-color: rgba(0, 0, 0, 0);
+	transition: 0.2s;
+}
+
+.filter-buttons:hover {
+  text-decoration: none;
+	color: $black-text-color;
+}
+
+.filter-buttons:focus {
+  outline: none;
+  border-color: var(--darken-2);
+  box-shadow: 0 0 0 3px var(--darken-3);
+}
+.filter-box {
+	padding-top: 15px;
+}
+.active {
+  	color: $black-text-color;
+	border: solid black 1px;
+  	text-decoration: none;
+	transform: scale(1.05);
+}
+.hr-filter {
+	margin-top: 15px;
+	outline: none;
+	border-top: none;
+	border-bottom: solid 1px $white-text-color;
+}
+/* --- kandidat box --- */
+.box {
+	height: 560px;
+	margin-bottom: 20px;
+	padding-bottom: 50px;
+}
+
+
+
+
+/* KONKURRENCE SIDE HERUNDER */
+
+.text-box {
+		height: 250px;
+		background: $dark-grey;
+		margin-top: 50px;
+		
+		
+	}
+	
+	.text-box h3 {
+		width: 50%;
+		color: $white-text-color;
+		font-size: 2.5em;
+		text-align: center;	
+		padding-left: 60px;
+		padding-top: 70px;
+		
+	}
+	
+	.text-box h1 {
+		width: 50%;
+		color: $white-text-color;
+		font-size: 4.3em;
+		font-weight: bold;
+		text-align: center;
+		padding-left: 60px;
+		
+	}
+	
+	
+	#animation_container_gave {
+		width:650px; 
+		height:610px; 
+		margin-left: 45%; 
+		margin-top: -135px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	
+	
+	#canvas {
+		width:650; 
+		height:610; 
+		position: absolute; 
+		display: block;
+	}
+	
+	#dom_overlay_container {
+		pointer-events:none; 
+		overflow:hidden; 
+		width:650px; 
+		height:610px; 
+		position: absolute; 
+		left: 0px; 
+		top: 0px; 
+		display: block;
+	}
+	
+	
+	
+	form {
+		height: auto;
+		background: $brand-color;
+		color: $white-text-color;
+		padding-top: 40px;
+		
+	}
+	
+	.formular {
+		
+	}
+	
+	label {
+		font-size: 0.8em;
+		width: 10%;
+		margin-left: 14%;
+		
+	}
+	
+	#se_video {
+		width: auto;
+		font-size: 0.8em;
+		padding-bottom: 0;
+		margin-left: 14%;
+		margin-top: 17px;
+		overflow: hidden;
+		
+	}
+	
+	
+	#name, #email {
+		width: 30%;
+		height: 30px;
+		margin-top: 5px;
+		margin-left: 14%;
+		border-radius: 5px;
+		border: none;
+		outline-color: #777777;
+		-webkit-transition: 0.1s;
+		-moz-transition: 0.1s;
+		-o-transition: 0.1s;
+		transition: 0.1s;
+		
+	}
+	
+	#answer {
+		width: 30%;
+		height: 30px;
+		margin-top: 5px;
+		margin-left: 14%;
+		border-radius: 5px;
+		border: none;
+		outline-color: #777777;
+		-webkit-transition: 0.1s;
+		-moz-transition: 0.1s;
+		-o-transition: 0.1s;
+		transition: 0.1s;
+		
+	}
+	
+	
+	#vote {
+		min-width: 30.2%;
+		margin-left: 14%;
+		background-color: $dark-grey;
+		border: none;
+		color: $white-text-color;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 1em;
+		border-radius: 5px;
+	}
+	
+	#vote:hover {
+		background-color: $secondary-color;
+		
+	}
+	
+	form p {
+		font-size: 0.5em;
+		margin-top: 10px;
+		margin-left: 17.5%;
+		padding-bottom: 40px;
+		
+	}
+	
+	#wrongEmail {
+		width: 45%;
+		font-size: 1.5em;
+		margin-left: 11%;
+		
+	}
+	
+	#emailCheat {
+		font-size: 1em;
+		margin-left: 11%;
+		margin-top: 50px;
+		
+	}
+	
+	
+	#backTo {
+		min-width: 30.2%;
+		margin-left: 14%;
+		background-color: $dark-grey;
+		border: none;
+		color: $white-text-color;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 1em;
+		border-radius: 5px;
+		
+	}
+	
+	#backTo:hover {
+		background-color: $secondary-color;
+		
+	}
+	
+	
+	
+	.information1, .information2, .information3 {
+		height: 360px;
+		background: $background-color;
+		
+	}
+	
+	#trophy, #badge, #info {
+		max-width: 40px;
+		margin-top: 40px;
+		margin-left: 40px;
+		
+		
+	}
+	
+	.information1 h1 {
+		color: #C6C6C6;
+		margin-top: -50px;
+		padding-left: 100px;
+		font-size: 1.6em;
+		font-weight: 300;
+		
+	}
+	
+	.information1 p {
+		padding-left: 100px;
+		margin-top: 9px;
+		font-size: 0.7em;
+		width: 60%;
+		color: #C6C6C6;
+		line-height: 15px;
+		
+	}
+	
+	.information2 h1 {
+		color: #C6C6C6;
+		margin-top: -50px;
+		padding-left: 100px;
+		font-size: 1.6em;
+		font-weight: 300;
+		
+	}
+	
+	.information2 p {
+		padding-left: 100px;
+		margin-top: 9px;
+		font-size: 0.7em;
+		width: 60%;
+		color: #C6C6C6;
+		line-height: 15px;
+		
+	}
+	
+	.information3 h1 {
+		color: #C6C6C6;
+		margin-top: -50px;
+		padding-left: 100px;
+		font-size: 1.6em;
+		font-weight: 300;
+		
+	}
+	
+	.information3 p {
+		padding-left: 100px;
+		margin-top: 9px;
+		font-size: 0.7em;
+		width: 60%;
+		color: #C6C6C6;
+		line-height: 15px;
+		
+	}
+	
+	
+	#echoText1 {
+		width:80%; 
+		margin-left: -5%;
+		font-size: 1.5em;
+		
+	}
+	
+	#echoText2 {
+		width: 50%;
+		font-size: 1em;
+		margin-left: 9.8%;
+		line-height: 17px;
+		
+	}
+
+	#stemmeguide_btn_box {
+		margin-top: 40px;
+	}
+	
+	#stemmeguide_btn {
+		margin-left: 14%;
+		background-color: $dark-grey;
+		color: $white-text-color;
+		padding-left: 140px;
+		padding-right: 140px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 1.3em;
+		font-weight: 400;
+		border-radius: 5px;
+	}
+
+	#stemmeguide_btn:hover {
+		background-color: $secondary-color;
+	}
+
+/* KONKURRENCE PLAY BUTTON HERUNDER */
+	
+	.player-button-container {
+		width: 100%;
+		float: left;
+		margin-left: 280px;
+		margin-top: -30px;
+		overflow: hidden;
+		
+	}
+
+
+	.player-button-container:hover {
+	  opacity: 0.5;
+	}
+
+	.player-button-container:hover {
+	  opacity: 0.5;
+	}
+
+	.player-button-text {
+	  color: $secondary-color;
+	  font-size: 2.2em;
+	  
+		opacity: 0.8;
+		
+	}
+
+
+
+
+/* Tablet - stylesheet */
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .col-4-12 {
+    width: 33.3%; 
+} 
+.topnav {
+	z-index: 999;
+	top: 0;
+	position: fixed;
+	height: 50px;
+}
+.nav-desktop li {
+    list-style: none;
+    padding-right: 5px;
+    padding-left: 5px;
+	margin-left: 20px;
+}
+.countdown {
+      text-align: left;
+      font-size: 13px;
+      font-family: 'Nunito Sans', futura, helvetica, arial, sans-serif;
+      word-spacing: 2px;
+	height: 50px;
+	padding-top: 13px;
+} 
+	
+	
+	
+/* FORSIDE */
+	
+
+/* --- tilbage knap --- */
+.tilbage-box {
+	text-align: center;
+}
+.tilbage {
+	width: 50px;
+	margin-top: 60px;
+	margin-left: 0px;
+}
+	
+/* --- aarhus + odense + kobenhavn.HTML --- */
+.box1-aarhus, .box1-odense, .box1-kobenhavn {
+	margin-top: 0px;
+	height: 380px;
+	text-align: center;
+}
+.box1-aarhus h1, .box1-odense h1, .box1-kobenhavn h1 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.aarhus, .odense, .kobenhavn {
+	width: 120px;
+}
+.box2-aarhus, .box2-odense, .box2-kobenhavn {
+	height: auto;
+	text-align: center;
+	background: $brand-color;
+}	
+.box2-aarhus img, .box2-odense img, .box2-kobenhavn img {
+	width: 200px;
+	margin-top: 50px;
+}
+.box2-aarhus h4, .box2-odense h4, .box2-kobenhavn h4 {
+	margin-top: 5px;
+	color: $white-text-color;
+	font-size: 1.2em;
+}
+.box2-aarhus h5, .box2-odense h5, .box2-kobenhavn h5 {
+	margin-top: 5px;
+	color: $white-text-color;
+	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+.box2-aarhus h6, .box2-odense h6, .box2-kobenhavn h6 {
+	margin-top: 5px;
+	color: $white-text-color;
+	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+.box2-aarhus p, .box2-odense p, .box2-kobenhavn p {
+	line-height: 1.2;
+	color: $white-text-color;
+	text-align: left;
+	width: 230px;
+	margin-left: 10%;
+}
+.box2-aarhus li, .box2-odense li, .box2-kobenhavn li {
+	line-height: 1.2;
+	color: $white-text-color;
+	text-align: left;
+	width: 220px;
+	margin-left: 10%;
+}
+	
+	
+	
+	
+	
+/* KONKURRENCE SIDE HERUNDER */	
+
+.text-box h3 {
+		width: 50%;
+		color: $white-text-color;
+		font-size: 2.5em;
+		text-align: center;	
+		padding-left: 40px;
+		padding-top: 70px;
+	}
+	
+	.text-box h1 {
+		width: 50%;
+		color: $white-text-color;
+		font-size: 4.3em;
+		font-weight: bold;
+		text-align: center;
+		padding-left: 40px;
+	}
+	
+	
+	
+	#animation_container_gave {
+		position: relative;
+		overflow: hidden;
+	}
+	
+	
+	form p {
+		width: 33%;
+		font-size: 0.5em;
+		margin-top: 10px;
+		margin-left: 13.5%;
+		padding-bottom: 40px;
+	}
+	
+	#wrongEmail {
+		width: 50%;
+		font-size: 1.2em;
+		margin-left: 10%;
+	}
+	
+	
+	
+	#echoText1 {
+		width: 80%; 
+		margin-left: -3%;
+		font-size: 1.2em;
+	}
+	
+	#echoText2 {
+		width: 50%;
+		font-size: 0.8em;
+		margin-left: 9.6%;
+		line-height: 17px;
+	}
+	
+		/* KONKURRENCE PLAY BUTTON HERUNDER */
+	.player-button-container {
+		width: 100%;
+		margin-left: 240px;
+		margin-top: -30px;
+		overflow: hidden;
+		
+	}
+	
+	#stemmeguide_btn_box {
+		margin-top: 40px;
+	}
+	
+	#stemmeguide_btn {
+		margin-left: 8%;
+		background-color: $dark-grey;
+		color: $white-text-color;
+		padding-left: 90px;
+		padding-right: 90px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 1.3em;
+		font-weight: 400;
+		border-radius: 5px;
+	}
+
+	#stemmeguide_btn:hover {
+		background-color: $secondary-color;
+	}
+	
+	
+
+
+	
+
+}
+
+
+/* Vertikal Smartphone - stylesheet */
+@media handheld, only screen and (max-width: 767px) {
+	
+h1 {
+	font-size: 2.5em;
+	font-weight: 200;
+}
+h2 {
+	font-size: 1em;
+	font-weight: 200;
+}
+/* Generelle styles */
+.topnav {
+		display: none;
+}
+	
+.mobile-header {
+	text-align: center;
+	background: $secondary-color;
+	height: 50px;
+	padding-top: 0px;
+	opacity: 0.95;
+}
+.mobile {
+	display: block;
+ 	position: fixed;
+  	top: 0;
+  	width: 100%;
+	z-index: 50;
+}
+.mobile div {
+  display: none;
+}
+
+.mobile a {
+  display: block; 
+}
+
+.mobile a {
+  text-decoration: none;
+  color: $white-text-color;
+  font-weight: 200;
+  background: $secondary-color;
+  text-align: center;
+  padding: 15px;
+  border-bottom: solid #ddd 1px;
+	opacity: 0.96;
+}
+nav .selected {
+	color: $brand-color;
+}
+	
+.mobile button {
+	z-index: 50;
+	position: absolute;
+	top: 7px;
+	right: 15px;
+	width: 35px;
+	height: 35px;
+	background: url(img/hamburger-btn.svg) center no-repeat;
+	border: 0px solid $black-text-color;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.6s ease;
+}
+	
+.mobile button.expanded {
+  transform: rotate(90deg); 
+}
+	
+.logo-mobile {
+	padding-top: 5px;
+	display: block;
+	padding-right: 15px;
+
+}
+.logo-mobile img {
+	width: 230px;
+}
+
+.countdown {
+	display: none;
+} 
+
+/* --- Forside.HTML --- */
+.video {
+		margin-top: 0px;
+	
+}
+.box1 {
+  	height: auto;
+	color: $white-text-color;
+	background: $brand-color;
+	padding-top: 20px;
+	margin-left: -50%;
+	
+	
+}
+.box1 h2 {
+	font-size: 1.6em;
+	padding-bottom: 20px;
+	
+}
+.box1 p {
+	font-size: 1em;
+	padding-bottom: 100px;
+	
+}
+.box2 {
+	height: 1050px;
+	
+}
+.countdown2 {
+	margin-bottom: 40px;
+	
+}
+
+
+
+/* --- stemmeguide.HTML --- */
+.box1-din-kommune {
+	height: auto;
+}
+.box1-din-kommune h2 {
+	margin-top: 60px;
+	font-size: 1.8em;
+}
+
+/* --- DANMARK KORT --- */
+/* BILLEDETS SToRRELSE */
+
+.map_image {
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 50px;
+}
+.map_image svg {
+width : 105%;
+}
+/* --- JYLLAND.HTML --- */
+.box2-jylland {
+	text-align: left;
+	height: auto;
+	margin-top: 20px;
+}
+.box2-jylland h1 {
+	text-align: center;
+	color: $white-text-color;
+	padding-top: 35px;
+	margin-left: 0%;
+}
+.box2-jylland h2 {
+	margin-top: 30px;
+	font-size: 2.5em;
+	font-weight: 400;
+	color: $white-text-color;
+	line-height: 1.4;
+	margin-left: 30%;
+}
+.box2-jylland p {
+	font-size: 1.6em;
+	color: $white-text-color;
+	line-height: 1.6;
+	transition: 0.2s;
+	margin-left: 30%;
+	margin-bottom: 20px;
+}
+/* --- FYN.HTML --- */
+.box2-fyn {
+	text-align: left;
+	height: auto;
+	margin-top: 20px;
+}
+.box2-fyn h1 {
+	text-align: center;
+	color: $white-text-color;
+	padding-top: 35px;
+	margin-left: 0%;
+}
+.box2-fyn h2 {
+	margin-top: 30px;
+	font-size: 2.5em;
+	font-weight: 400;
+	color: $white-text-color;
+	line-height: 1.4;
+	margin-left: 30%;
+}
+.box2-fyn p {
+	font-size: 1.6em;
+	color: $white-text-color;
+	line-height: 1.6;
+	transition: 0.2s;
+	margin-left: 30%;
+	margin-bottom: 20px;
+}
+/* --- SJAELLAND.HTML --- */
+.box2-sjaelland {
+	text-align: left;
+	height: auto;
+	margin-top: 20px;
+}
+.box2-sjaelland h1 {
+	text-align: center;
+	color: $white-text-color;
+	padding-top: 35px;
+	margin-left: 0%;
+}
+.box2-sjaelland h2 {
+	margin-top: 30px;
+	font-size: 2.5em;
+	font-weight: 400;
+	color: $white-text-color;
+	line-height: 1.4;
+	margin-left: 30%;
+}
+.box2-sjaelland p {
+	font-size: 1.6em;
+	color: $white-text-color;
+	line-height: 1.6;
+	transition: 0.2s;
+	margin-left: 30%;
+	margin-bottom: 20px;
+}
+
+/* --- tilbage knap --- */
+.tilbage-box {
+	text-align: center;
+}
+.tilbage {
+	width: 50px;
+	margin-top: 10px;
+	margin-left: 0px;
+}
+
+/* --- aarhus + odense + kobenhavn.HTML --- */
+.box1-aarhus, .box1-odense, .box1-kobenhavn {
+	margin-top: 0px;
+	height: 380px;
+	text-align: center;
+}
+.box1-aarhus h1, .box1-odense h1, .box1-kobenhavn h1 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.aarhus, .odense, .kobenhavn {
+	width: 140px;
+}
+.aarhus-skyline, .odense-skyline, .kobenhavn-skyline {
+	margin-bottom: -5px;
+	width: 400px;
+	opacity: 1;
+}
+.box2-aarhus, .box2-odense, .box2-kobenhavn {
+	height: auto;
+	text-align: center;
+	background: $brand-color;
+}
+.box2-aarhus img, .box2-odense img, .box2-kobenhavn img {
+	width: 200px;
+	margin-top: 30px;
+}
+.box2-aarhus h2, .box2-odense h2, .box2-kobenhavn h2 {
+	font-size: 2em;
+}
+.box2-aarhus h4, .box2-odense h4, .box2-kobenhavn h4 {
+	margin-top: 5px;
+	color: $white-text-color;
+	font-size: 1.2em;
+}
+.box2-aarhus h5, .box2-odense h5, .box2-kobenhavn h5 {
+	margin-top: 5px;
+	color: $white-text-color;
+	font-size: 1.0em;
+	margin-bottom: 20px;
+}
+.box2-aarhus p, .box2-odense p, .box2-kobenhavn p {
+	line-height: 1.2;
+	color: $white-text-color;
+	text-align: left;
+	width: 280px;
+	margin-left: 10%;
+	margin-bottom: 50px;
+}
+.box2-aarhus li, .box2-odense li, .box2-kobenhavn li {
+	line-height: 1.2;
+	color: $white-text-color;
+	text-align: left;
+	width: 280px;
+	margin-left: 28%;
+}
+	
+
+	
+	
+	
+	
+/* KONKURRENCE SIDE HERUNDER */
+	
+	.text-box {
+		margin-top: 49px;
+	}
+	
+	.text-box h3 {
+		width: 85%;
+		color: $white-text-color;
+		font-size: 2.5em;
+		margin-left: -5%;
+		padding-top: 70px;
+		margin-left: -2%;
+	}
+	
+	.text-box h1 {
+		width: 85%;
+		color: $white-text-color;
+		font-size: 4.3em;
+		font-weight: bold;
+		margin-left: -2%;
+		
+	}
+	
+	
+	
+	#animation_container_gave {
+		display: none;
+	}
+	
+	
+	form {
+		height: auto;
+		background: $brand-color;
+		color: $white-text-color;
+		padding-top: 40px;
+		
+		
+	}
+	
+	
+	label {
+		font-size: 0.8em;
+		width: 10%;
+		margin-left: 21%;
+	}
+	
+	
+	#name, #email, #answer {
+		width: 50%;
+		height: 30px;
+		margin-top: 5px;
+		margin-left: 21%;
+		border-radius: 5px;
+		border: none;
+		outline-color: #777777;
+		-webkit-transition: 0.1s;
+		-moz-transition: 0.1s;
+		-o-transition: 0.1s;
+		transition: 0.1s;
+	}
+	
+	#se_video {
+		width: auto;
+		font-size: 0.8em;
+		padding-bottom: 0;
+		margin-left: 21%;
+		margin-top: 17px;
+		
+	
+	}
+	
+	
+	
+	#vote {
+		min-width: 50.2%;
+		margin-left: 21%;
+		background-color: $dark-grey;
+		border: none;
+		color: $white-text-color;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 1em;
+		border-radius: 5px;
+	}
+	
+	#vote:hover {
+		background-color: $secondary-color;
+		
+	}
+	
+	form p {
+		width: 40%;
+		font-size: 0.5em;
+		margin-top: 10px;
+		margin-left: 25%;
+		padding-bottom: 40px;
+	}
+	
+	#wrongEmail {
+		width: 55%;
+		font-size: 1.2em;
+		margin-left: 20%;
+	}
+	
+	#emailCheat {
+		width: 85%;
+		font-size: 1em;
+		margin-left: 10%;
+	}
+	
+	#backTo {
+		min-width: 55.2%;
+		margin-left: 18%;
+		background-color: $dark-grey;
+		border: none;
+		color: $white-text-color;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 1em;
+		border-radius: 5px;
+	}
+	
+	#backTo:hover {
+		background-color: $secondary-color;
+		
+	}
+	
+	#echoText1 {
+		width: 100%; 
+		margin-left: 0%;
+		font-size: 1.2em;
+	}
+	
+	#echoText2 {
+		width: 70%;
+		font-size: 0.8em;
+		margin-left: 14.7%;
+		line-height: 17px;
+	}
+	
+	
+	.information1, .information2, .information3 {
+		height: auto;
+		background: #FFFFFF;
+	}
+
+	
+	.information1 p {
+		padding-bottom: 30px;
+	}
+	
+	
+	.information2 p {
+		padding-bottom: 30px;
+	}
+	
+	.information3 p {
+		padding-bottom: 50px;
+	}
+	
+	
+	#stemmeguide_btn_box {
+		margin-top: 40px;
+	}
+	
+	#stemmeguide_btn {
+		margin-left: 20%;
+		background-color: $dark-grey;
+		color: $white-text-color;
+		padding-left: 130px;
+		padding-right: 130px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 1.3em;
+		font-weight: 400;
+		border-radius: 5px;
+	}
+
+	#stemmeguide_btn:hover {
+		background-color: $secondary-color;
+	}
+	
+	
+	
+		/* KONKURRENCE PLAY BUTTON HERUNDER */
+	.player-button-container {
+		width: 100%;
+		margin-left: 290px;
+		margin-top: -30px;
+		overflow: hidden;
+		
+	}
+	
+	
+}
+
+	
+
+
+/* Smartphone Stylesheet */
+@media screen and (max-width: 440px) {
+
+.logo-mobile {
+	padding-top: 8px;
+	display: block;
+	padding-right: 15px;
+
+}
+.logo-mobile img {
+	width: 200px;
+}
+	
+/* --- Forside.HTML --- */
+
+.box1 {
+  	height: auto;
+	color: $white-text-color;
+	background: $brand-color;
+	padding-top: 20px;
+	
+}
+.box1 h2 {
+		padding-bottom: 20px;
+}
+.box1 p {
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 1em;
+	padding-bottom: 100px;
+}
+.box2 {
+	height: 1350px;
+}
+	
+.box2 li{
+	margin-left: 70px;	
+}	
+.countdown2 {
+	font-size: 0.7em;
+	margin-bottom: 20px;
+}
+
+	
+/* --- stemmeguide.HTML --- */
+/* --- DANMARK KORT --- */
+/* BILLEDETS SToRRELSE */
+.map_image {
+	margin-top: 100px;
+	max-width: 500px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-bottom: 80px;
+}
+.map_image svg {
+width : 105%;
+}
+
+.map_image-din-kommune {
+	margin-top: 50px;
+	max-width: 500px;
+	margin-left: 34%;
+}
+.map_image-din-kommune svg {
+width : 100%;
+height : 350px;
+}
+
+/* --- JYLLAND+FYN+SJAELLAND --- */
+.box2-jylland h1, .box2-fyn h1, .box2-sjaelland h1 {
+	font-size: 2.2em;
+
+}
+.box2-jylland h2, .box2-fyn h2, .box2-sjaelland h2 {
+	margin-top: 30px;
+	font-size: 1.8em;
+}
+.box2-jylland h3, .box2-fyn h3, .box2-sjaelland h3 {
+	font-size: 1em;
+	margin-bottom: 0px;
+}
+.box2-jylland p, .box2-fyn p, .box2-sjaelland p {
+	font-size: 1.3em;
+	margin-bottom: 5px;
+}	
+
+	
+/* --- aarhus + odense + kobenhavn.HTML --- */
+.box1-aarhus, .box1-odense, .box1-kobenhavn {
+	margin-top: 0px;
+	height: 340px;
+	text-align: center;
+}
+.box1-aarhus h1, .box1-odense h1, .box1-kobenhavn h1 {
+	font-size: 1.8em;
+}
+	.aarhus {
+		width: 120px;
+	}
+.aarhus-skyline, .odense-skyline, .kobenhavn-skyline {
+	margin-bottom: -5px;
+	width: 90%;
+	opacity: 1;
+}
+.box2-aarhus, .box2-odense, .box2-kobenhavn {
+	height: auto;
+	text-align: center;
+	background: $brand-color;
+}
+.box2-aarhus img, .box2-odense img, .box2-kobenhavn img {
+	width: 200px;
+	margin-top: 30px;
+}
+.box2-aarhus h2, .box2-odense h2, .box2-kobenhavn h2 {
+	font-size: 2em;
+}
+.box2-aarhus h4, .box2-odense h4, .box2-kobenhavn h4 {
+	margin-top: 5px;
+	color: $white-text-color;
+	font-size: 1.2em;
+}
+.box2-aarhus h5, .box2-odense h5, .box2-kobenhavn h5 {
+	margin-top: 5px;
+	color: $white-text-color;
+	font-size: 1.0em;
+	margin-bottom: 20px;
+}
+.box2-aarhus p, .box2-odense p, .box2-kobenhavn p {
+	line-height: 1.2;
+	color: $white-text-color;
+	text-align: left;
+	width: 280px;
+	margin-left: 10%;
+	margin-bottom: 50px;
+}
+.box2-aarhus li, .box2-odense li, .box2-kobenhavn li {
+	line-height: 1.2;
+	color: $white-text-color;
+	text-align: left;
+	width: 280px;
+	margin-left: 13%;
+	margin-right: 15px;
+}
+	
+	
+	
+	
+	
+	
+/* KONKURRENCE SIDE HERUNDER */
+	
+	.text-box {
+		margin-top: 49px;
+	
+	}
+	
+	.text-box h3 {
+		width: 59%;
+		color: $white-text-color;
+		font-size: 1.3em;
+		padding-top: 40px;
+		margin-left: 3%;
+		
+	}
+	
+	.text-box h1 {
+		width: 59%;
+		color: $white-text-color;
+		font-size: 2.5em;
+		font-weight: bold;
+		padding-top:0;
+		margin-left: 3%;
+		
+	}
+	
+	#animation_container_gave {
+		display: none;
+	}
+	
+	
+	
+	form {
+		height: auto;
+		background: $brand-color;
+		color: $white-text-color;
+		padding-top: 40px;
+		
+		
+	}
+	
+	
+	label {
+		font-size: 0.7em;
+		width: 10%;
+		margin-left: 9%;
+	}
+	
+	
+	#name, #email, #answer {
+		width: 81%;
+		height: 30px;
+		margin-top: 5px;
+		margin-left: 9%;
+		border-radius: 5px;
+		border: none;
+		outline-color: #777777;
+		-webkit-transition: 0.1s;
+		-moz-transition: 0.1s;
+		-o-transition: 0.1s;
+		transition: 0.1s;
+	}
+	
+	#se_video {
+		width: auto;
+		font-size: 0.8em;
+		padding-bottom: 0;
+		margin-left: 9%;
+		margin-top: 17px;
+		
+	
+	}
+	
+	
+	
+	
+	
+	#vote {
+		min-width: 81.2%;
+		margin-left: 9%;
+		background-color: $dark-grey;
+		border: none;
+		color: $white-text-color;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 1em;
+		border-radius: 5px;
+	}
+	
+	#vote:hover {
+		background-color: $secondary-color;
+		
+	}
+	
+	form p {
+		width: 81%;
+		font-size: 0.5em;
+		margin-top: 10px;
+		margin-left: 9%;
+		padding-bottom: 40px;
+	}
+	
+	#wrongEmail {
+		width: 80%;
+		font-size: 1em;
+		margin-left: 9%;
+	}
+	
+	#emailCheat {
+		width: 90%;
+		font-size: 1em;
+		margin-left: 7%;
+	}
+	
+	
+	
+	#stemmeguide_btn_box {
+		margin-top: 40px;
+	}
+	
+	#stemmeguide_btn {
+		margin-left: 7%;
+		background-color: $dark-grey;
+		color: $white-text-color;
+		padding-left: 60px;
+		padding-right: 60px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 1.3em;
+		font-weight: 400;
+		border-radius: 5px;
+	}
+
+	#stemmeguide_btn:hover {
+		background-color: $secondary-color;
+	}
+	
+	
+	
+	
+		/* KONKURRENCE PLAY BUTTON HERUNDER */
+	.player-button-container {
+		width: 100%;
+		margin-left: 130px;
+		margin-top: -30px;
+		overflow: hidden;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+/* --- filtrering - inspiration: https://www.w3schools.com/howto/howto_js_countdown.asp --- */
+.filter-buttons {
+    font-size: 0.8rem;
+}
+.active {
+  	color: $black-text-color;
+	border: solid black 1px;
+  	text-decoration: none;
+	transform: scale(1.05);
+}
+	
+	
+	
+}
+/* Fade In Effect - Inspiration from: http://codepen.io/bluehaus/pen/EfGyi */
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+
+
+
+
+/* Footer med Sociale medier - Inspiration: https://codepen.io/Deadlymuffin/pen/hGiqo/ */
+footer {
+	background: $secondary-color;
+	height: 120px;
+	margin-bottom: 0px;
+	max-width: 1940px;
+  /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
+  margin: 0 auto;
+	
+}
+
+
+a {
+    text-decoration: none;
+    color: $white-text-color;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+	padding-top: 20px;
+    font-size: 1.4em;
+	text-align: center;
+	color: $white-text-color;
+	font-weight: 200;
+}
+ul {
+    padding:0;
+	list-style: circle;
+}
+.footer-social-icons {
+    width: auto;
+    display:block;
+    margin: 0 auto;
+	text-align: center;
+}
+.social-icon {
+    color: $white-text-color;
+}
+ul.social-icons {
+    margin-top: 10px;
+	margin-bottom: 20px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: $white-text-color;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+	font-size: 1.8em;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: $dark-grey;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-instagram {
+    padding:10px 12px;
+	font-size: 1.8em;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: $dark-grey;
+}
+.fa-instagram:hover {
+    background-color: #E0396D;
+}
+.fa-youtube {
+    padding:10px 14px;
+	font-size: 1.8em;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: $dark-grey;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-envelope-o {
+    padding:10px 14px;
+	font-size: 1.8em;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: $dark-grey;
+}
+.fa-envelope-o:hover {
+    background-color: #3B77D3;
+}
+.fa-twitter {
+    padding:10px 14px;
+	font-size: 1.8em;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: $dark-grey;
+}
+.fa-twitter:hover {
+    background-color: #1DA1F2;
+}
+.fa-globe {
+    padding:10px 14px;
+	font-size: 1.8em;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: $dark-grey;
+}
+.fa-globe:hover {
+    background-color: #4485FF;
+}
+.fa-snapchat {
+    padding:10px 14px;
+	font-size: 1.8em;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: $dark-grey;
+}
+.fa-snapchat:hover {
+    background-color: #FFFC00;
+}
+
+
+.social-links-facebook {
+	padding:10px 13px;
+	font-size: 1.0em;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: $dark-grey;
+	border-radius: 100px;
+}
+.social-links-facebook:hover {
+	transform: rotate(360deg); 
+}
+.social-links {
+    padding:10px 11px;
+	font-size: 1.0em;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: $dark-grey;
+	border-radius: 100px;
+	margin-bottom: 10px;
+}
+.social-links:hover {
+	transform: rotate(360deg); 
+}
+

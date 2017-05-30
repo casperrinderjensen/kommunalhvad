@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="da">
+<head>
+<title>KommunalHVAD | Stemmeguide - Kommunalvalg - Aarhus</title>
+<meta name="description" content="KommunalHVAD - Kommunalvalg 2017 - Stemmeguide til unge - Aarhus kommune - Find den kandidat der passer til dig!">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Google Font - Nunito Sans -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600" rel="stylesheet">
+<!-- Font Awesome - Ikoneer -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+<!-- Stylesheet -->
+<link rel="stylesheet" href="styles.css">
+
+
+<!-- forbindelse til jQuery library - til hamburger menu -->
+<script 
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+</script>
+
+
+</head>
+
+<body>
+
+<div class="grid grid-pad">
+		
+		<div class="col-1-1 topnav hide-on-mobile">
+			<div class="col-4-12 logo"><a href="index.html"><img src="img/logo.svg" alt="KommunalHVAD"></a></div>
+			<div class="col-6-12 content nav-desktop">
+				<nav>
+					<ul>
+						<li><a href="index.html">Forside</a></li>
+						<li><a class="selected" href="stemmeguide.html">Stemmeguide</a></li>
+						<li><a href="konkurrence-kommunalvalg.php">Konkurrence</a></li>
+					</ul>
+				</nav>
+			</div>
+       
+        <div class="col-2-12 content countdown"> 
+        
+				<div>
+					<p id="countdown"></p>
+					<p>Kommunalvalg 2017</p>
+
+
+					<!-- JAVASCRIPT HERUNDER 
+						Kode inspiration: https://www.w3schools.com/howto/howto_js_countdown.asp
+					-->
+					<script type="text/javascript">
+					// Sæt den dato som uret skal tælle ned til
+					var countDownDate = new Date("Nov 21, 2017 00:00:00").getTime();
+
+
+					// Opdatere nedtællingen hvert sekund
+					var x = setInterval(function() {
+
+
+						// Denne finder det nuværende øjebliks tid
+						var now = new Date().getTime();
+
+
+						// Finder den distance der er mellem den nuværende tid og nedtællings datoen
+						var distance = countDownDate - now;
+
+
+						// Tid udregning for dage, timer, minutter og sekunder
+						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+						// Viser resultatet i elementet id="countdown"
+  						document.getElementById("countdown").innerHTML = days + "d " + hours + "t "
+  						+ minutes + "m " + seconds + "s ";
+
+
+						// Når nedtælling rammer den rigtige dato, skal den vise noget tekst
+						if (distance < 0) {
+							clearInterval(x);
+							document.getElementById("countdown").innerHTML = "Husk at stemme i dag";
+						}
+					}, 1000);
+					</script>
+				</div>
+        
+        </div>
+		</div>
+      		<!-- Smarthpone Menu -->
+       		<div class="mobile-col-1-1 mobile-header logo-mobile"><img src="img/logo.svg" alt="KommunalHVAD"></div>
+				<nav class="mobile">
+					<button class="hamburger-btn"></button>
+						<div>
+							<a href="index.html">Forside</a>
+							<a class="selected" href="stemmeguide.html">Stemmeguide</a>
+							<a href="konkurrence-kommunalvalg.php">Konkurrence</a>
+						</div>
+				</nav>
+			
+	<div class="col-1-1 box1-aarhus">
+			
+			<div class="tilbage-box"><a href="stemmeguide-kommunalvalg-jylland.html"><img class="tilbage" src="img/tilbage.svg" alt="Tilbage"></a></div>
+			
+			<h1>Aarhus Kommune</h1>
+			
+			<img class="aarhus fade-in" src="img/aarhus.svg" alt="Aarhus Kommune - Kommunalvalg - Stemmeguide">
+	</div>
+			
+		<div class="col-1-1 aarhus-skyline-box">
+			<img class="aarhus-skyline" src="img/aarhus-skyline.svg" alt="Aarhus - Skyline">
+		</div>
+			
+			
+			<div class="col-1-1 box2-aarhus">
+			
+		<div class="filter-box">
+			<h5>Sorter efter fokusområde</h5>
+		
+			<!-- Filtrering med jQuery - Inspiration: https://codepen.io/terf/post/jquery-filter-divs -->
+			<button class="active filter-buttons" data-filter="box">Vis alle</button>
+			<button class="filter-buttons" data-filter="a">Ungdomsboliger</button>
+			<button class="filter-buttons" data-filter="b">Uddannelse</button>
+			<button class="filter-buttons" data-filter="c">Arbejde</button>
+			<button class="filter-buttons" data-filter="d">Fritidsfaciliteter</button>
+			<button class="filter-buttons" data-filter="e">Transport</button>
+			<button class="filter-buttons" data-filter="f">Grøn energi</button>
+		
+			<hr class="hr-filter">
+		</div>
+				<div id="parent">
+					<div class="col-1-3 box a b c">
+						<img src="img/jacob.jpg" alt="Jacob Bundsgaard - Social Demokraterne">
+						<h4>Jacob Bundsgaard</h4>
+						<h5>Social demokraterne</h5>
+							<a href="https://www.facebook.com/jacobbundsgaard/?ref=br_rs" class="social-icons-aarhus" target="_blank"> <i class="fa fa-facebook social-links-facebook"></i></a>
+							<a href="https://www.instagram.com/jacobbundsgaard/?hl=en" class="social-icons-aarhus" target="_blank"> <i class="fa fa-instagram social-links"></i></a>
+							<a href="http://www.socialdemokratiet.dk/politiker/jacob-bundsgaard/politik/" class="social-icons-aarhus" target="_blank"> <i class="fa fa-globe social-links"></i></a>
+							<h6>Mærkesager:</h6>
+							<ul>
+								<li>Flere jobs</li>
+								<li>Skabe en endnu bedre folkeskole for alle børn</li>
+							</ul>
+					</div>
+					<div class="col-1-3 box a b">
+						<img src="img/rabih.jpg" alt="Rabih Azad-Ahmad - Det Radikale Venstre">
+						<h4>Rabih Azad-Ahmad</h4>
+						<h5>Det radikale venstre</h5>
+						<a href="https://da-dk.facebook.com/rabih.azadahmad" class="social-icons-aarhus" target="_blank"> <i class="fa fa-facebook social-links-facebook"></i></a>
+							<a href="http://www.2017aarhusianere.dk/rabih-azad-ahmad" class="social-icons-aarhus" target="_blank"> <i class="fa fa-globe social-links"></i></a>
+							<h6>Mærkesager:</h6>
+							<ul>
+								<li>Flere praktikpladser til unge</li>
+								<li>En blomstrende kulturhovedstad</li>
+								<li>Bedre miljø for iværksættere og et bedre samspil mellem erhvervslivet, uddannelsesinstitutionerne og kommunen</li>
+							</ul>
+			
+					</div>
+					<div class="col-1-3 box b">
+						<img src="img/marc.jpg" alt="Marc Perera Christensen - Det Konservative Folkeparti">
+						<h4>Marc Perera Christensen</h4>
+						<h5>Det konservative folkeparti</h5>
+						<a href="https://www.facebook.com/marc.p.christensen.5/" class="social-icons-aarhus" target="_blank"> <i class="fa fa-facebook social-links-facebook"></i></a>
+							<a href="http://www.marcpc.dk/politik.html" class="social-icons-aarhus" target="_blank"> <i class="fa fa-globe social-links"></i></a>
+							<h6>Mærkesager:</h6>
+							<ul>
+								<li>Flere arbejdspladser</li>
+								<li>Velfærd til socialt dårligt stillede og svage medborgere</li>
+							</ul>
+							
+					</div>
+			
+					<div class="col-1-3 box a c">
+						<img src="img/thomas.jpg" alt="Thomas Medom - Socialistisk Folkeparti">
+						<h4>Thomas Medom</h4>
+						<h5>Socialistisk folkeparti</h5>
+						<a href="https://www.facebook.com/stemmedom" class="social-icons-aarhus" target="_blank"> <i class="fa fa-facebook social-links-facebook"></i></a>
+							<a href="https://twitter.com/thomasmedom" class="social-icons-aarhus" target="_blank"> <i class="fa fa-twitter social-links"></i></a>
+							<a href="http://sf.dk/partiforeninger/midtjylland/sf-aarhus/thomas-medom" class="social-icons-aarhus" target="_blank"> <i class="fa fa-globe social-links"></i></a>
+							<h6>Mærkesager:</h6>
+							<ul>
+								<li>Velfærd til alle - uanset baggrund</li>
+								<li>Flere arbejdspladser</li>
+								<li>Beboelse</li>
+							</ul>
+							
+					</div>
+					<div class="col-1-3 box c e">
+						<img src="img/bunyamin.jpg" alt="Bünyamin Simsek - Venstre">
+						<h4>Bünyamin Simsek</h4>
+						<h5>Venstre</h5>
+						<a href="https://www.facebook.com/BnyaminSimsek" class="social-icons-aarhus" target="_blank"> <i class="fa fa-facebook social-links-facebook"></i></a>
+							<a href="https://www.instagram.com/buraadmand/" class="social-icons-aarhus" target="_blank"> <i class="fa fa-instagram social-links"></i></a>
+							<a href="http://www.altinget.dk/kandidater/kv13/Bunyamin-Simsek?show=maerkesager" class="social-icons-aarhus" target="_blank"> <i class="fa fa-globe social-links"></i></a>
+							<h6>Mærkesager:</h6>
+							<ul>
+								<li>Flere arbejdspladser</li>
+								<li>Transport</li>
+							</ul>
+							
+					</div>
+					<div class="col-1-3 box a b">
+						<img src="img/maria.jpg" alt="Maria Sloth - Enhedslisten">
+						<h4>Maria Sloth</h4>
+						<h5>Enhedslisten</h5>
+						<a href="https://www.facebook.com/MariaSlothEhl/" class="social-icons-aarhus" target="_blank"> <i class="fa fa-facebook social-links-facebook"></i></a>
+							<a href="https://twitter.com/MariaSloth" class="social-icons-aarhus" target="_blank"> <i class="fa fa-twitter social-links"></i></a>
+							<a href="http://aarhus.enhedslisten.dk/node/12815" class="social-icons-aarhus" target="_blank"> <i class="fa fa-globe social-links"></i></a>
+							<h6>Mærkesager:</h6>
+							<ul>
+								<li>Flere studieboliger</li>
+								<li>Kvalitet i skolerne</li>
+								<li>Ligestilling</li>
+							</ul>
+						</div>	
+					
+				</div>
+		
+		</div>
+		
+</div>
+	
+<footer>
+		<div class="footer-social-icons">
+			<h4 class="_14">Følg og kontakt os på</h4>
+			<ul class="social-icons">
+				<li><a href="https://www.facebook.com/kommunalhvad.dk/" class="social-icon" target="_blank"> <i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/kommunalhvad/?hl=en" target="_blank" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+				<li><a href="https://www.youtube.com/watch?v=CdKRyD0TLUw" target="_blank" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+				<li><a href="mailto:kommunal@hvad.dk" class="social-icon"> <i class="fa fa-envelope-o"></i></a></li>
+			</ul>
+		</div>
+</footer>
+
+
+	
+	<!-- Filtrering med jQuery - Inspiration: https://codepen.io/simeydotme/pen/ewKBr -->
+	<script>
+			var $boxs = $("#parent > .box");
+	var $btns = $(".filter-buttons").on("click", function() {
+
+	  var active = 
+		$btns.removeClass("active")
+		  .filter(this)
+		  .addClass("active")
+		  .data("filter");
+
+	  $boxs
+		.hide()
+		.filter( "." + active )
+		.fadeIn(450);
+
+	});
+	</script>
+	
+	<!-- Tilfældig rækkefølge af kandidater - Inspiration: http://stackoverflow.com/questions/18483241/random-div-order-on-page-load -->
+	<script>
+		var kandidater = $(".box");
+		for(var i = 0; i < kandidater.length; i++){
+    	var target = Math.floor(Math.random() * kandidater.length -1) + 1;
+    	var target2 = Math.floor(Math.random() * kandidater.length -1) +1;
+    	kandidater.eq(target).before(kandidater.eq(target2));
+		}
+	</script>
+	
+	
+	<!-- Forbindelse til JavaScript filen - Til hamburger menu -->
+	<script src="hamburger.js" type="text/javascript"></script>
+	
+</body>
+</html>
